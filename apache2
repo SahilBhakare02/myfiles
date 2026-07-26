@@ -1,0 +1,7 @@
+FROM ubuntu:22.04
+RUN apt update -y && apt install apache2 -y
+COPY ./index.html /var/www/html/index.html
+LABEL Author="Sahil"
+WORKDIR /opt
+EXPOSE 81
+ENTRYPOINT ["apache2ctl", "-D", "FOREGROUND"]
