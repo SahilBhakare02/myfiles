@@ -4,3 +4,7 @@ ENV MYSQL_DATABASE=student_erp
 ENV MYSQL_USER=erp_user
 ENV MYSQL_PASSWORD=erp_pass123
 EXPOSE 3306
+
+#docker build . -t <image-name>
+#docker run -d -P <image-name>
+#docker exec -it <container-ID> mysql -u <user-name> -p 
